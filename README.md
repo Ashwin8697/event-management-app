@@ -1,59 +1,63 @@
-# EventManagementApp
+# Event Management Portal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.13.
+## Project Description
 
-## Development server
+Event Management Portal is an Angular application that displays a list of events along with their date, ticket price, and category. The application demonstrates the use of Angular Components, Custom Pipes, Custom Directives, Data Binding, Structural Directives, and Component-specific Styling.
 
-To start a local development server, run:
+## Installation Steps
+
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Run the Application
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 3. Open in Browser
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Implemented Features
 
-```bash
-ng generate --help
-```
+### Event List Component
 
-## Building
+* Displays event details in a tabular format.
+* Uses Angular's `*ngFor` directive to render multiple events dynamically.
 
-To build the project run:
+### Custom Pipe (PriceFormatPipe)
 
-```bash
-ng build
-```
+* Formats ticket prices into Indian currency format.
+* Example:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+  * 3500 → ₹3,500.00
+  * 5000 → ₹5,000.00
 
-## Running unit tests
+### Custom Directive (HighlightDirective)
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+* Highlights premium events with ticket prices greater than ₹2000.
+* Improves visibility of high-value events.
 
-```bash
-ng test
-```
+### Component-Specific Styling
 
-## Running end-to-end tests
+* Table layout and formatting implemented using component CSS.
+* Hover effects added for better user experience.
 
-For end-to-end (e2e) testing, run:
+### Angular Features Used
 
-```bash
-ng e2e
-```
+* Components
+* Custom Pipes
+* Custom Directives
+* Property Binding
+* Structural Directives (`*ngFor`)
+* Component-specific CSS Styling
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Author
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Ashwin Raj
