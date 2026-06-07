@@ -1,0 +1,33 @@
+<h1>Event Management Portal</h1>
+
+<table>
+
+  <thead>
+    <tr>
+      <th>Event Name</th>
+      <th>Date</th>
+      <th>Ticket Price</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr
+      *ngFor="let event of events"
+      appHighlight
+      [price]="event.price">
+
+      <td>{{ event.name }}</td>
+
+      <td>{{ event.date }}</td>
+
+      <td>{{ event.price | priceFormat }}</td>
+
+      <td>{{ event.category }}</td>
+
+    </tr>
+
+  </tbody>
+
+</table>
